@@ -13,7 +13,7 @@ const stories = [
     title: 'Финансовый рынок',
     description:
       'Анализ спроса на кредиты показал, что снижение ставки на 0.2% от основной дает прирост обращений в 12.7 раз.',
-    image: 'https://placehold.co/600x400/334155/f59e0b?text=Finance',
+    image: 'https://placehold.co/600x400',
     dataAiHint: 'finance analytics',
     metric: '12.7x',
     metricLabel: 'Прирост обращений',
@@ -22,7 +22,7 @@ const stories = [
     title: 'Росатом «АтомМайнд»',
     description:
       'Система предсказания сбоев оборудования помогла снизить брак, сократить затраты на обслуживание и сэкономить миллионы.',
-    image: 'https://placehold.co/600x400/334155/f59e0b?text=Industry',
+    image: 'https://placehold.co/600x400',
     dataAiHint: 'nuclear power',
     metric: '61%',
     metricLabel: 'Снижение брака',
@@ -31,7 +31,7 @@ const stories = [
     title: 'Ozon',
     description:
       'ИИ-модели компьютерного зрения для управления запасами повышают точность прогнозирования, сокращают издержки и увеличивают продажи.',
-    image: 'https://placehold.co/600x400/334155/f59e0b?text=Logistics',
+    image: 'https://placehold.co/600x400',
     dataAiHint: 'warehouse logistics',
     metric: '25%',
     metricLabel: 'Точность прогноза (оценка)',
@@ -40,7 +40,7 @@ const stories = [
     title: 'Андеррайтинг',
     description:
       'Российская компания с помощью аналогов BigQuery и Vertex AI сократила время на андеррайтинг с 3 дней до нескольких минут.',
-    image: 'https://placehold.co/600x400/334155/f59e0b?text=Underwriting',
+    image: 'https://placehold.co/600x400',
     dataAiHint: 'business meeting',
     metric: '< 5 мин',
     metricLabel: 'Время на андеррайтинг',
