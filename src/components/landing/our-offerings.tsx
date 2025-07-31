@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Section } from './section';
-import { HeartPulse, Search, FileText, Code2, Users, Rocket } from 'lucide-react';
+import { HeartPulse, Search, FileText, Code2, Users, Rocket, Link } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -43,6 +43,12 @@ const offerings = [
       'Предлагаем облачную платформу EMD Cloud для визуализации и автоматизации процессов без программирования.',
     detailedDescription: `
       <div class="space-y-4">
+        <div>
+          <a href="https://cloud.emd.one/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold flex items-center gap-2">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"/></svg>
+            Перейти на платформу
+          </a>
+        </div>
         <p class="text-sm text-muted-foreground">Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.</p>
         
         <h4 class="font-semibold !mt-4">Административный портал</h4>
@@ -79,7 +85,10 @@ const offerings = [
     detailedDescription: `
       <div class="space-y-4">
         <div>
-          <a href="https://kybernetix.ru/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold">Био разработчика</a>
+          <a href="https://kybernetix.ru/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold flex items-center gap-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-link"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.72"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.72-1.72"/></svg>
+            Био разработчика
+          </a>
         </div>
         <div>
           <h4 class="font-semibold">Для кого подойдёт?</h4>

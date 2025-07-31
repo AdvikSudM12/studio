@@ -11,11 +11,16 @@ export const Footer = () => {
             <span className="font-bold">EMD.EDUCATION</span>
           </div>
           <div className="text-center md:text-left text-sm text-muted-foreground max-w-2xl">
-            <p className="mb-2">
-              Внедрение ИИ во все бизнес-процессы — необходимость для выживания на
-              рынке. Без ИИ компании теряют в гибкости, точности прогнозов и
-              оптимизации затрат, что приводит к вытеснению с рынка.
-            </p>
+             <p className="mb-2">
+               <a href="https://kybernetix.ru/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
+                Био разработчика
+               </a>
+             </p>
+             <p>
+              <a href="https://cloud.emd.one/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
+                EMD Cloud Platform
+              </a>
+             </p>
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Все права защищены.
