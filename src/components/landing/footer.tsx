@@ -16,9 +16,6 @@ export const Footer = () => {
               рынке. Без ИИ компании теряют в гибкости, точности прогнозов и
               оптимизации затрат, что приводит к вытеснению с рынка.
             </p>
-            <a href="https://kybernetix.ru/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
-              Био разработчика
-            </a>
           </div>
           <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} Все права защищены.

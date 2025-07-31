@@ -51,6 +51,9 @@ const offerings = [
     detailedDescription: `
       <div class="space-y-4">
         <div>
+          <a href="https://kybernetix.ru/" target="_blank" rel="noopener noreferrer" class="text-primary hover:underline font-semibold">Био разработчика</a>
+        </div>
+        <div>
           <h4 class="font-semibold">Для кого подойдёт?</h4>
           <p class="text-muted-foreground text-sm">В первые итерации, мы ориентируемся на малый и средний бизнес, и на тех, кто не боится экспериментировать и применять новые технологии в своих бизнес-процессах. Дальше, после интеграции BPMN, ориентируемся на всех, кто использует автоматизацию в своих бизнес-процессах.</p>
         </div>
