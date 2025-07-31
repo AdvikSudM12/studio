@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Section } from './section';
-import { HeartPulse, Search, FileText, Code2, Users, Rocket } from 'lucide-react';
+import { HeartPulse, Search, FileText, Code2, Users, Rocket, Server, ShieldCheck, Workflow, Database, LayoutDashboard, MessageSquare, Plug, UsersRound } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -41,7 +41,69 @@ const offerings = [
     title: 'Готовый low-code инструмент',
     description:
       'Предлагаем облачную платформу EMD Cloud для визуализации и автоматизации процессов без программирования.',
-    detailedDescription: 'Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.'
+    detailedDescription: `
+      <div class="space-y-6">
+        <p class="text-sm text-muted-foreground">Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.</p>
+        <div class="grid grid-cols-2 gap-x-6 gap-y-8">
+          <div class="flex gap-4">
+            <Server class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Административный портал</h4>
+              <p class="text-xs text-muted-foreground">Единая система управления для всех приложений и инструментов в EMD Cloud.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <ShieldCheck class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Сервис авторизации</h4>
+              <p class="text-xs text-muted-foreground">Инструменты регистрации и авторизации для пользователей ваших приложений.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Database class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Базы данных</h4>
+              <p class="text-xs text-muted-foreground">Конструктор баз данных. Таблицы, галереи, канбан, календарь, списки и формы.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Workflow class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Конструктор процессов</h4>
+              <p class="text-xs text-muted-foreground">Визуальный конструктор алгоритмов. Триггеры, HTTP запросы, циклы, условия, JS код.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <LayoutDashboard class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Дашборды</h4>
+              <p class="text-xs text-muted-foreground">Конструктор панелей и страниц для удобного мониторинга и управления данными.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <MessageSquare class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Чаты и CRM</h4>
+              <p class="text-xs text-muted-foreground">Движок для чатов. Служба поддержки, групповые чаты, мессенджер и чаты с ИИ.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <Plug class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">API</h4>
+              <p class="text-xs text-muted-foreground">Позволяет использовать EMD Cloud как полноценный бэкенд вашего приложения.</p>
+            </div>
+          </div>
+           <div class="flex gap-4">
+            <UsersRound class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
+            <div>
+              <h4 class="font-semibold">Роли и доступы</h4>
+              <p class="text-xs text-muted-foreground">Управление группами пользователей, настройка доступов к ресурсам.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    `
   },
   {
     icon: Users,
@@ -107,7 +169,7 @@ export const OurOfferings = () => {
                   <div className="bg-primary/10 p-4 rounded-full mb-4">
                     <offering.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <CardTitle className="text-lg h-12 flex items-center">{offering.title}</CardTitle>
+                  <CardTitle className="text-lg flex items-center min-h-[3rem]">{offering.title}</CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
                 <CardDescription>
