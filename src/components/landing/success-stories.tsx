@@ -9,14 +9,11 @@ import {
 } from '@/components/ui/card';
 import { Section } from './section';
 import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from '@/components/ui/accordion';
 
 const stories = [
   {
@@ -62,42 +59,36 @@ export const SuccessStories = () => {
           Реальные кейсы, демонстрирующие мощь AI в бизнесе.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 gap-8">
         {stories.map((story, index) => (
-          <Dialog key={index}>
-            <Card className="flex flex-col">
-              <CardHeader>
-                <CardTitle>{story.title}</CardTitle>
-                <CardDescription>{story.description}</CardDescription>
-              </CardHeader>
-              <CardContent className="mt-auto flex flex-col gap-4">
-                <div className="bg-primary/10 p-4 rounded-lg text-center">
-                  <div className="text-4xl font-extrabold text-primary">
-                    {story.metric}
+          <Card key={index} className="flex flex-col">
+            <Accordion type="single" collapsible className="w-full">
+              <AccordionItem value={`item-${index}`} className="border-b-0">
+                <CardHeader>
+                  <CardTitle>{story.title}</CardTitle>
+                  <CardDescription>{story.description}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex flex-col gap-4">
+                  <div className="bg-primary/10 p-4 rounded-lg text-center">
+                    <div className="text-4xl font-extrabold text-primary">
+                      {story.metric}
+                    </div>
+                    <div className="text-sm font-medium text-primary/80">
+                      {story.metricLabel}
+                    </div>
                   </div>
-                  <div className="text-sm font-medium text-primary/80">
-                    {story.metricLabel}
-                  </div>
-                </div>
-                <DialogTrigger asChild>
-                  <Button variant="outline" size="sm">
+                  <AccordionTrigger className="text-primary hover:no-underline justify-center">
                     Узнать больше
-                  </Button>
-                </DialogTrigger>
-              </CardContent>
-            </Card>
-            <DialogContent className="sm:max-w-[425px]">
-              <DialogHeader>
-                <DialogTitle>{story.title}</DialogTitle>
-                <DialogDescription>
-                  Подробности успешного внедрения AI.
-                </DialogDescription>
-              </DialogHeader>
-              <p className="text-sm text-muted-foreground py-4">
-                {story.detailedDescription}
-              </p>
-            </DialogContent>
-          </Dialog>
+                  </AccordionTrigger>
+                </CardContent>
+                <AccordionContent className="p-6 pt-0">
+                  <p className="text-sm text-muted-foreground">
+                    {story.detailedDescription}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          </Card>
         ))}
       </div>
     </Section>
