@@ -1,5 +1,4 @@
 import { BrainCircuit } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 export const Header = () => {
   return (
@@ -10,7 +9,11 @@ export const Header = () => {
           <span className="font-bold">EMD.EDUCATION</span>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button>Начать трансформацию</Button>
+          <img
+            src="https://static.tildacdn.com/tild6434-3963-4634-a563-343065656564/__NW__1_1.svg"
+            alt="Conference Logo"
+            className="h-10"
+          />
         </div>
       </div>
     </header>
