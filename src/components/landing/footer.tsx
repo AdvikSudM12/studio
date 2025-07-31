@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center">
             <BrainCircuit className="h-6 w-6 mr-2 text-primary" />
-            <span className="font-bold">AI Transformation Navigator</span>
+            <span className="font-bold">EMD.EDUCATION</span>
           </div>
           <p className="text-center md:text-left text-sm text-muted-foreground max-w-2xl">
             Внедрение ИИ во все бизнес-процессы — необходимость для выживания на

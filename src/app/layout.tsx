@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'AI Transformation Navigator',
+  title: 'EMD.EDUCATION',
   description:
     'Integrating AI into your business processes to stay ahead of the competition.',
 };
