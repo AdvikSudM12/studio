@@ -44,7 +44,7 @@ const offerings = [
     detailedDescription: `
       <div class="space-y-6">
         <p class="text-sm text-muted-foreground">Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.</p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
+        <div class="space-y-6">
           <div class="flex gap-4 items-start">
             <Server class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
