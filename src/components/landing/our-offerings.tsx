@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Section } from './section';
-import { HeartPulse, Search, FileText, Code2, Users } from 'lucide-react';
+import { HeartPulse, Search, FileText, Code2, Users, Rocket } from 'lucide-react';
 
 const offerings = [
   {
@@ -39,6 +39,12 @@ const offerings = [
     description:
       'Внедряем инновационную систему с AI-оркестратором и матрицей ответственности для прозрачного и эффективного управления процессами.',
   },
+  {
+    icon: Rocket,
+    title: 'Развитие системы {KAIZEN}',
+    description:
+      'Планы на 2-й этап: импорт/экспорт BPMN, визуализация процессов, BPMN-оркестратор, система учёта опыта сотрудников и полная интеграция с внешними сервисами.',
+  },
 ];
 
 export const OurOfferings = () => {
@@ -68,8 +74,6 @@ export const OurOfferings = () => {
             </CardContent>
           </Card>
         ))}
-        {/* Empty card to balance the grid if needed */}
-         <div className="hidden lg:block lg:col-start-3"></div>
       </div>
     </Section>
   );
