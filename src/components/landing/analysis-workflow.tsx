@@ -129,10 +129,9 @@ export const AnalysisWorkflow = () => {
         {workflowSteps.map((item) => (
           <AccordionItem value={`item-${item.step}`} key={item.step}>
             <AccordionTrigger className="text-left text-lg hover:no-underline">
-              <span className="font-bold text-primary mr-4">{item.step}.</span>
               {item.title}
             </AccordionTrigger>
-            <AccordionContent className="pl-10">
+            <AccordionContent>
               <p className="text-base text-muted-foreground mb-4">
                 {item.description}
               </p>
