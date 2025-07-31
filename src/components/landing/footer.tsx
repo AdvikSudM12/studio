@@ -10,10 +10,15 @@ export const Footer = () => {
             <BrainCircuit className="h-6 w-6 mr-2 text-primary" />
             <span className="font-bold">EMD.EDUCATION</span>
           </div>
-          <div className="text-center md:text-left text-sm text-muted-foreground max-w-2xl">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-center md:text-left text-sm text-muted-foreground">
              <p>
               <a href="https://cloud.emd.one/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
                 EMD Cloud Platform
+              </a>
+             </p>
+             <p>
+              <a href="https://t.me/SafeVibeCode" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
+                Тех. поддержка
               </a>
              </p>
           </div>
