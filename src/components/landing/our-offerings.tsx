@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Section } from './section';
-import { HeartPulse, Search, FileText, Code2, Users, Rocket, Server, ShieldCheck, Workflow, Database, LayoutDashboard, MessageSquare, Plug, UsersRound } from 'lucide-react';
+import { HeartPulse, Search, FileText, Code2, Users, Rocket } from 'lucide-react';
 import {
   Accordion,
   AccordionContent,
@@ -42,66 +42,32 @@ const offerings = [
     description:
       'Предлагаем облачную платформу EMD Cloud для визуализации и автоматизации процессов без программирования.',
     detailedDescription: `
-      <div class="space-y-6">
+      <div class="space-y-4">
         <p class="text-sm text-muted-foreground">Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.</p>
-        <div class="space-y-6">
-          <div class="flex gap-4 items-start">
-            <Server class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Административный портал</h4>
-              <p class="text-xs text-muted-foreground">Единая система управления для всех приложений и инструментов в EMD Cloud.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <ShieldCheck class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Сервис авторизации</h4>
-              <p class="text-xs text-muted-foreground">Инструменты регистрации и авторизации для пользователей ваших приложений.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <Database class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Базы данных</h4>
-              <p class="text-xs text-muted-foreground">Конструктор баз данных. Таблицы, галереи, канбан, календарь, списки и формы.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <Workflow class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Конструктор процессов</h4>
-              <p class="text-xs text-muted-foreground">Визуальный конструктор алгоритмов. Триггеры, HTTP запросы, циклы, условия, JS код.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <LayoutDashboard class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Дашборды</h4>
-              <p class="text-xs text-muted-foreground">Конструктор панелей и страниц для удобного мониторинга и управления данными.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <MessageSquare class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Чаты и CRM</h4>
-              <p class="text-xs text-muted-foreground">Движок для чатов. Служба поддержки, групповые чаты, мессенджер и чаты с ИИ.</p>
-            </div>
-          </div>
-          <div class="flex gap-4 items-start">
-            <Plug class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">API</h4>
-              <p class="text-xs text-muted-foreground">Позволяет использовать EMD Cloud как полноценный бэкенд вашего приложения.</p>
-            </div>
-          </div>
-           <div class="flex gap-4 items-start">
-            <UsersRound class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
-            <div>
-              <h4 class="font-semibold">Роли и доступы</h4>
-              <p class="text-xs text-muted-foreground">Управление группами пользователей, настройка доступов к ресурсам.</p>
-            </div>
-          </div>
-        </div>
+        
+        <h4 class="font-semibold !mt-4">Административный портал</h4>
+        <p class="text-xs text-muted-foreground">Единая система управления для всех приложений и инструментов в EMD Cloud.</p>
+        
+        <h4 class="font-semibold !mt-4">Сервис авторизации</h4>
+        <p class="text-xs text-muted-foreground">Инструменты регистрации и авторизации для пользователей ваших приложений.</p>
+        
+        <h4 class="font-semibold !mt-4">Базы данных</h4>
+        <p class="text-xs text-muted-foreground">Конструктор баз данных. Таблицы, галереи, канбан, календарь, списки и формы.</p>
+        
+        <h4 class="font-semibold !mt-4">Конструктор процессов</h4>
+        <p class="text-xs text-muted-foreground">Визуальный конструктор алгоритмов. Триггеры, HTTP запросы, циклы, условия, JS код.</p>
+        
+        <h4 class="font-semibold !mt-4">Дашборды</h4>
+        <p class="text-xs text-muted-foreground">Конструктор панелей и страниц для удобного мониторинга и управления данными.</p>
+        
+        <h4 class="font-semibold !mt-4">Чаты и CRM</h4>
+        <p class="text-xs text-muted-foreground">Движок для чатов. Служба поддержки, групповые чаты, мессенджер и чаты с ИИ.</p>
+        
+        <h4 class="font-semibold !mt-4">API</h4>
+        <p class="text-xs text-muted-foreground">Позволяет использовать EMD Cloud как полноценный бэкенд вашего приложения.</p>
+        
+        <h4 class="font-semibold !mt-4">Роли и доступы</h4>
+        <p class="text-xs text-muted-foreground">Управление группами пользователей, настройка доступов к ресурсам.</p>
       </div>
     `
   },
@@ -144,9 +110,18 @@ const offerings = [
     title: 'Развитие системы {KAIZEN}',
     description:
       'Планы на 2-й этап: импорт/экспорт BPMN, визуализация процессов, BPMN-оркестратор и многое другое.',
-    detailedDescription: `Мы планируем добавить возможность импорта/экспорта BPMN-схем, продвинутую визуализацию, полноценный BPMN-оркестратор, систему учёта опыта сотрудников для непрерывных улучшений и полную интеграцию с внешними сервисами.
-    <br/><br/>
-    Система учёта опыта сотрудников — если сотрудник видит, что можно улучшить в процессах, нажимает на специальную кнопку "Репорт об проблеме или улучшении". Дальше, при проведении ретро, сотрудники не высасывают из пальца проблемы/идеи, а обсуждают уже существующие боли.`
+    detailedDescription: `
+      <div class="space-y-4">
+        <p class="text-sm text-muted-foreground">Что планируем делать во втором этапе?</p>
+        <ul class="list-disc list-inside text-muted-foreground text-sm space-y-1">
+          <li>Возможность импорта/экспорта BPMN-схем.</li>
+          <li>Визуализация процессов.</li>
+          <li>Создание BPMN-оркестратора, полностью соот. требованиям BPMN 2.0 нотации.</li>
+          <li>Система учёта опыта сотрудников — если сотрудник видит, что можно улучшить в процессах, нажимает на специальную кнопку "Репорт об проблеме или улучшении". Дальше, при проведении ретро, сотрудники не высасывают из пальца проблемы/идеи, а обсуждают уже существующие боли.</li>
+          <li>Полный спектр интеграций с внешними сервисами.</li>
+        </ul>
+      </div>
+    `
   },
 ];
 
@@ -161,7 +136,7 @@ export const OurOfferings = () => {
           Комплексные решения и подходы для интеграции искусственного интеллекта в ваши бизнес-процессы.
         </p>
       </div>
-      <Accordion type="single" collapsible className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
+      <Accordion type="single" collapsible className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
         {offerings.map((offering, index) => (
           <AccordionItem value={`item-${index}`} key={index} className="bg-background rounded-lg border-b-0 flex">
             <Card className="flex flex-col text-center hover:shadow-lg transition-shadow duration-300 bg-transparent border-0 h-full w-full">
