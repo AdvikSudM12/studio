@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <Section className="text-center">
       <div className="py-20 md:py-32">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-blue-400 to-primary">
+        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-primary via-amber-400 to-primary">
           Навигатор по AI-трансформации бизнеса
         </h1>
         <p className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground mb-8">
