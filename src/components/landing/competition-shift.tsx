@@ -1,4 +1,4 @@
-import { Users, Bot } from 'lucide-react';
+import { Users, Bot, Zap } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Section } from './section';
 
@@ -10,41 +10,55 @@ export const CompetitionShift = () => {
           Сдвиг парадигмы в конкуренции
         </h2>
         <p className="text-lg text-muted-foreground mt-2">
-          От соревнования людей к соревнованию бизнес-моделей.
+          От соревнования людей к соревнованию бизнес-моделей и их оркестрации.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-8 items-start">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
         <Card>
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Users className="text-primary" />
-              Исторический контекст: конкуренция людей
+              Как было: Конкуренция людей
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              Раньше успех компании зависел от квалификации, опыта и
-              креативности сотрудников. Соревнование шло на уровне человеческих
-              способностей: кто быстрее выполнит задачу, кто найдёт лучшее
-              решение, кто придумает инновацию. Ключевым фактором успеха был
-              уровень специалистов.
+              Успех компании зависел от квалификации и опыта сотрудников.
+              Соревнование шло на уровне человеческих способностей: кто
+              быстрее выполнит задачу, кто найдёт лучшее решение. Ключевым
+              фактором был уровень специалистов.
+            </p>
+          </CardContent>
+        </Card>
+        <Card>
+          <CardHeader>
+            <CardTitle className="flex items-center gap-2">
+              <Bot className="text-primary" />
+              Как стало: Битва бизнес-моделей
+            </CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-muted-foreground">
+              Конкуренция сместилась в плоскость «бизнес-модель против
+              бизнес-модели». Искусственный интеллект стал ядром более
+              эффективных и адаптивных бизнес-моделей, позволяя компаниям
+              сохранять лидерство на рынке.
             </p>
           </CardContent>
         </Card>
         <Card className="border-primary border-2">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
-              <Bot className="text-primary" />
-              Современная экономика: битва бизнес-моделей
+              <Zap className="text-primary" />
+              Как надо: AI-оркестрация систем
             </CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              Сегодня конкуренция все чаще разворачивается не в плоскости
-              «продукт против продукта», а «бизнес-модель против
-              бизнес-модели». Искусственный интеллект становится ядром более
-              эффективных, быстрых и адаптивных бизнес-моделей, позволяя
-              сохранять лидерство и успешно адаптироваться к рынку.
+              Будущее за компаниями, где AI не просто автоматизирует задачи, а
+              оркестрирует всю бизнес-систему. Это — единая нейросеть,
+              управляющая процессами, ресурсами и данными для достижения
+              максимальной эффективности и гибкости.
             </p>
           </CardContent>
         </Card>
