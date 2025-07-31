@@ -9,7 +9,6 @@ import { OurOfferings } from '@/components/landing/our-offerings';
 import { Footer } from '@/components/landing/footer';
 import { Section } from '@/components/landing/section';
 import { Separator } from '@/components/ui/separator';
-import { AiTools } from '@/components/landing/ai-tools';
 
 export default function Home() {
   return (
@@ -26,7 +25,6 @@ export default function Home() {
         </Section>
         <AnalysisWorkflow />
         <OurOfferings />
-        <AiTools/>
         <Section>
           <Separator />
         </Section>
