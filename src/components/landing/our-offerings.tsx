@@ -55,21 +55,21 @@ export const OurOfferings = () => {
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {offerings.map((offering, index) => (
           <Card key={index} className="flex flex-col text-center hover:shadow-lg transition-shadow duration-300">
-            <CardHeader className="items-center">
+            <CardHeader className="items-center pt-8">
                 <div className="bg-primary/10 p-4 rounded-full mb-4">
                   <offering.icon className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle className="text-lg">{offering.title}</CardTitle>
+                <CardTitle className="text-lg h-12 flex items-center">{offering.title}</CardTitle>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex-grow">
               <CardDescription>
                 {offering.description}
               </CardDescription>
             </CardContent>
           </Card>
         ))}
-        {/* Empty card to balance the grid */}
-        <div className="hidden lg:block"></div>
+        {/* Empty card to balance the grid if needed */}
+         <div className="hidden lg:block lg:col-start-3"></div>
       </div>
     </Section>
   );
