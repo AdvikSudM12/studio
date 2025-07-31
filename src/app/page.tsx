@@ -25,6 +25,9 @@ export default function Home() {
         </Section>
         <AnalysisWorkflow />
         <OurOfferings />
+        <Section>
+          <Separator />
+        </Section>
       </main>
       <Footer />
     </div>
