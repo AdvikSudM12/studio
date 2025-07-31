@@ -1,5 +1,6 @@
 import {
   Card,
+  CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
@@ -16,7 +17,7 @@ const offerings = [
   },
   {
     icon: Search,
-    title: 'Аудит бизнес-процессов для выявления возможностей автоматизации',
+    title: 'Аудит бизнес-процессов',
     description:
       'Проводим детальный анализ текущих процессов для определения зон, где AI может сократить издержки и повысить производительность.',
   },
@@ -28,7 +29,7 @@ const offerings = [
   },
   {
     icon: Code2,
-    title: 'Готовый low-code инструмент {cloud.emd.one}',
+    title: 'Готовый low-code инструмент',
     description:
       'Предлагаем облачную платформу EMD Cloud для визуализации процессов, интеграции и создания сценариев автоматизации без программирования.',
   },
@@ -51,22 +52,24 @@ export const OurOfferings = () => {
           Комплексные решения и подходы для интеграции искусственного интеллекта в ваши бизнес-процессы.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {offerings.map((offering, index) => (
-          <Card key={index} className="hover:shadow-lg transition-shadow duration-300">
-            <CardHeader>
-              <div className="flex items-center gap-4">
-                <div className="bg-primary/10 p-3 rounded-full">
-                  <offering.icon className="h-6 w-6 text-primary" />
+          <Card key={index} className="flex flex-col text-center hover:shadow-lg transition-shadow duration-300">
+            <CardHeader className="items-center">
+                <div className="bg-primary/10 p-4 rounded-full mb-4">
+                  <offering.icon className="h-8 w-8 text-primary" />
                 </div>
                 <CardTitle className="text-lg">{offering.title}</CardTitle>
-              </div>
-              <CardDescription className="pt-4">
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
                 {offering.description}
               </CardDescription>
-            </CardHeader>
+            </CardContent>
           </Card>
         ))}
+        {/* Empty card to balance the grid */}
+        <div className="hidden lg:block"></div>
       </div>
     </Section>
   );
