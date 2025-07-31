@@ -44,57 +44,57 @@ const offerings = [
     detailedDescription: `
       <div class="space-y-6">
         <p class="text-sm text-muted-foreground">Это мощное решение для быстрого создания и внедрения сценариев автоматизации, интеграции систем и визуализации бизнес-процессов с помощью интуитивно понятного интерфейса.</p>
-        <div class="grid grid-cols-2 gap-x-6 gap-y-8">
-          <div class="flex gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-8">
+          <div class="flex gap-4 items-start">
             <Server class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Административный портал</h4>
               <p class="text-xs text-muted-foreground">Единая система управления для всех приложений и инструментов в EMD Cloud.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <ShieldCheck class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Сервис авторизации</h4>
               <p class="text-xs text-muted-foreground">Инструменты регистрации и авторизации для пользователей ваших приложений.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <Database class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Базы данных</h4>
               <p class="text-xs text-muted-foreground">Конструктор баз данных. Таблицы, галереи, канбан, календарь, списки и формы.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <Workflow class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Конструктор процессов</h4>
               <p class="text-xs text-muted-foreground">Визуальный конструктор алгоритмов. Триггеры, HTTP запросы, циклы, условия, JS код.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <LayoutDashboard class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Дашборды</h4>
               <p class="text-xs text-muted-foreground">Конструктор панелей и страниц для удобного мониторинга и управления данными.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <MessageSquare class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Чаты и CRM</h4>
               <p class="text-xs text-muted-foreground">Движок для чатов. Служба поддержки, групповые чаты, мессенджер и чаты с ИИ.</p>
             </div>
           </div>
-          <div class="flex gap-4">
+          <div class="flex gap-4 items-start">
             <Plug class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">API</h4>
               <p class="text-xs text-muted-foreground">Позволяет использовать EMD Cloud как полноценный бэкенд вашего приложения.</p>
             </div>
           </div>
-           <div class="flex gap-4">
+           <div class="flex gap-4 items-start">
             <UsersRound class="h-6 w-6 text-primary flex-shrink-0 mt-1"/>
             <div>
               <h4 class="font-semibold">Роли и доступы</h4>
