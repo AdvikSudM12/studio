@@ -12,7 +12,7 @@ export const WhyAi = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-3 gap-8">
-        <Card className="text-center">
+        <Card className="text-center bg-background">
           <CardHeader>
             <div className="mx-auto bg-primary/10 rounded-full h-16 w-16 flex items-center justify-center mb-4">
               <Gauge className="h-8 w-8 text-primary" />
@@ -25,7 +25,7 @@ export const WhyAi = () => {
             </p>
           </CardContent>
         </Card>
-        <Card className="text-center">
+        <Card className="text-center bg-background">
           <CardHeader>
             <div className="mx-auto bg-primary/10 rounded-full h-16 w-16 flex items-center justify-center mb-4">
               <BrainCircuit className="h-8 w-8 text-primary" />
@@ -38,7 +38,7 @@ export const WhyAi = () => {
             </p>
           </CardContent>
         </Card>
-        <Card className="text-center">
+        <Card className="text-center bg-background">
           <CardHeader>
             <div className="mx-auto bg-primary/10 rounded-full h-16 w-16 flex items-center justify-center mb-4">
               <Settings2 className="h-8 w-8 text-primary" />
