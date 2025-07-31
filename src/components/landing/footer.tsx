@@ -18,7 +18,7 @@ export const Footer = () => {
              </p>
              <p>
               <a href="https://t.me/SafeVibeCode" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
-                Тех. поддержка
+                Авторский канал
               </a>
              </p>
           </div>
