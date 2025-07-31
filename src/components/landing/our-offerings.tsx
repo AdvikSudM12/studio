@@ -145,7 +145,7 @@ export const OurOfferings = () => {
           Комплексные решения и подходы для интеграции искусственного интеллекта в ваши бизнес-процессы.
         </p>
       </div>
-      <Accordion type="single" collapsible className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+      <Accordion type="single" collapsible className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         {offerings.map((offering, index) => (
           <AccordionItem value={`item-${index}`} key={index} className="bg-background rounded-lg border-b-0 flex">
             <Card className="flex flex-col text-center hover:shadow-lg transition-shadow duration-300 bg-transparent border-0 h-full w-full">
