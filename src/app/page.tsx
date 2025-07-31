@@ -6,7 +6,6 @@ import { SuccessStories } from '@/components/landing/success-stories';
 import { OurSolutions } from '@/components/landing/our-solutions';
 import { AnalysisWorkflow } from '@/components/landing/analysis-workflow';
 import { OurOfferings } from '@/components/landing/our-offerings';
-import { AiTools } from '@/components/landing/ai-tools';
 import { Footer } from '@/components/landing/footer';
 import { Section } from '@/components/landing/section';
 import { Separator } from '@/components/ui/separator';
@@ -26,7 +25,6 @@ export default function Home() {
         </Section>
         <AnalysisWorkflow />
         <OurOfferings />
-        <AiTools />
       </main>
       <Footer />
     </div>
