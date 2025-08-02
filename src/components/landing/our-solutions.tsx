@@ -40,23 +40,67 @@ export const OurSolutions = () => {
                     <CardTitle>Автоматизация составления Технического Задания</CardTitle>
                     <CardDescription>От идеи к четкому ТЗ с помощью AI.</CardDescription>
                 </CardHeader>
-                <CardContent className="grid md:grid-cols-2 gap-8">
+                <CardContent className="space-y-6">
                     <div>
-                        <h3 className="font-semibold text-lg mb-2">Проблема</h3>
-                        <p className="text-muted-foreground">Заказчики приходят с идеями, но не могут составить четкое ТЗ, что вызывает недопонимание, задержки и дорогостоящие переделки проекта.</p>
+                        <h3 className="font-semibold text-xl mb-4">Как это работает:</h3>
+                        <div className="space-y-4">
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">1. Получение обращения клиента</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Зафиксировать запрос клиента и инициировать процесс.<br/><strong>Шаги:</strong> ИИ-оркестратор получает и анализирует запрос (текст, голос, email), выделяет ключевые элементы, формирует задачу для ИИ-агента и сохраняет обращение в БД.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">2. Сбор и уточнение информации</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Получить полное понимание идеи клиента.<br/><strong>Шаги:</strong> ИИ-агент формирует уточняющие вопросы, задает их клиенту, собирает и структурирует ответы, проводит доп. исследование. Оркестратор проверяет данные и передает их ИИ-архитектору.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">3. Планирование прототипа продукта</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Разработать архитектуру будущего продукта.<br/><strong>Шаги:</strong> ИИ-архитектор анализирует данные, разрабатывает архитектуру (модули, user flows, стек, диаграммы) и формирует прототип интерфейса.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">4. Составление списка задач и модулей</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Создать детализированный план реализации.<br/><strong>Шаги:</strong> ИИ-планировщик разбивает проект на модули и задачи, описывает функциональность, зависимости, присваивает приоритеты и создает временную шкалу.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">5. Оценка стоимости выполнения</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Рассчитать примерную стоимость разработки.<br/><strong>Шаги:</strong> ИИ-агент по оценке стоимости рассчитывает человеко-часы для каждой задачи, умножает на ставки специалистов и формирует итоговую смету с резервом.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">6. Формирование ТЗ и коммерческого предложения</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Подготовить финальные документы для клиента.<br/><strong>Шаги:</strong> ИИ-агент формирует подробное ТЗ (цели, требования, сценарии, архитектура) и КП (смета, сроки, условия), форматирует их и передает оркестратору.</p>
+                            </div>
+                            <div>
+                                <h4 className="font-semibold text-lg mb-2">7. Согласование и доработка</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Убедиться, что ТЗ и КП соответствуют ожиданиям клиента.<br/><strong>Шаги:</strong> ИИ-агент собирает обратную связь, оркестратор распределяет задачи по доработке между агентами и контролирует внесение изменений.</p>
+                            </div>
+                             <div>
+                                <h4 className="font-semibold text-lg mb-2">8. Финализация и передача</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Завершить и передать документы клиенту.<br/><strong>Шаги:</strong> ИИ-агент проверяет финальные версии, подготавливает их в нужном формате, а оркестратор передает клиенту и архивирует проект.</p>
+                            </div>
+                             <div>
+                                <h4 className="font-semibold text-lg mb-2">9. Поддержка после передачи</h4>
+                                <p className="text-muted-foreground"><strong>Цель:</strong> Обеспечить актуальность документов в процессе реализации.<br/><strong>Шаги:</strong> Оркестратор отслеживает запросы, распределяет задачи по доработке, а агенты вносят и согласовывают изменения.</p>
+                            </div>
+                        </div>
                     </div>
-                     <div>
-                        <h3 className="font-semibold text-lg mb-2">Решение</h3>
-                        <p className="text-muted-foreground">Сервис, где заказчик отвечает на вопросы через форму или чат-бота. ИИ анализирует ответы, использует отраслевые шаблоны и генерирует структурированное ТЗ (цели, функционал, требования, критерии приемки).</p>
+                     <div className="border-t pt-6">
+                        <h3 className="font-semibold text-xl mb-4">Особенности работы ИИ-оркестратора</h3>
+                        <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                            <li><strong>Координация:</strong> Управляет агентами для синхронного выполнения задач.</li>
+                            <li><strong>Автоматизация:</strong> Все этапы максимально автоматизированы.</li>
+                            <li><strong>Адаптивность:</strong> Использует обратную связь для улучшения процесса.</li>
+                            <li><strong>Точность:</strong> Каждый агент специализируется на своей задаче.</li>
+                            <li><strong>Хранение данных:</strong> Сохраняет историю изменений для прозрачности.</li>
+                        </ul>
                     </div>
-                    <div className="md:col-span-2">
-                         <h3 className="font-semibold text-lg mb-2">Результат</h3>
-                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 text-sm">
-                            <div className="flex items-center gap-2 p-3 bg-primary/10 rounded-lg"><CheckCircle2 className="h-5 w-5 text-primary" /> Упрощен первичный контакт</div>
-                            <div className="flex items-center gap-2 p-3 bg-primary/10 rounded-lg"><CheckCircle2 className="h-5 w-5 text-primary" /> Экономия времени</div>
-                            <div className="flex items-center gap-2 p-3 bg-primary/10 rounded-lg"><CheckCircle2 className="h-5 w-5 text-primary" /> Меньше недопонимания</div>
-                            <div className="flex items-center gap-2 p-3 bg-primary/10 rounded-lg"><CheckCircle2 className="h-5 w-5 text-primary" /> Быстрый старт проектов</div>
-                         </div>
+                    <div className="border-t pt-6">
+                        <h3 className="font-semibold text-xl mb-4">Полезные советы</h3>
+                        <ul className="list-disc list-inside text-muted-foreground space-y-1">
+                            <li>Используйте чёткие формулировки, чтобы избежать недопонимания.</li>
+                            <li>Регулярно проверяйте согласованность данных между агентами.</li>
+                            <li>Включайте в КП прозрачную разбивку стоимости и сроков.</li>
+                            <li>При недостатке данных ИИ-оркестратор должен делать разумные предположения и согласовывать их.</li>
+                            <li>Храните все версии документов для анализа и отката изменений.</li>
+                        </ul>
                     </div>
                 </CardContent>
             </Card>
