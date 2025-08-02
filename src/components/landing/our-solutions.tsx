@@ -10,13 +10,55 @@ import { CheckCircle2, TrendingUp, Search, Pencil, Code, TestTube2, BarChart } f
 import { Section } from './section';
 
 const mvpSteps = [
-    { day: 1, title: 'Гипотеза', description: 'Определить проблему, ЦА и сформулировать гипотезу.', icon: TrendingUp },
-    { day: 2, title: 'Исследование', description: 'Создать портрет аудитории, изучить конкурентов, провести опросы.', icon: Search },
-    { day: 3, title: 'Функционал', description: 'Определить минимальный набор функций и приоритизировать задачи.', icon: CheckCircle2 },
-    { day: 4, title: 'Прототип', description: 'Создать кликабельный прототип и подготовить сценарии.', icon: Pencil },
-    { day: 5, title: 'Разработка MVP', description: 'Реализовать ключевые функции (no-code/low-code) и настроить аналитику.', icon: Code },
-    { day: 6, title: 'Тестирование', description: 'Запустить MVP для 10–50 пользователей и собрать обратную связь.', icon: TestTube2 },
-    { day: 7, title: 'Анализ', description: 'Сравнить результаты с гипотезой и принять решение о дальнейших шагах.', icon: BarChart },
+    { 
+        day: 1, 
+        title: 'Гипотеза', 
+        description: 'Определить проблему, ЦА и сформулировать гипотезу.', 
+        aiHelp: 'ИИ помогает анализировать рыночные тренды и данные из соцсетей для выявления незанятых ниш.',
+        icon: TrendingUp 
+    },
+    { 
+        day: 2, 
+        title: 'Исследование', 
+        description: 'Создать портрет аудитории, изучить конкурентов, провести опросы.', 
+        aiHelp: 'ИИ может автоматически анализировать отзывы о конкурентах и генерировать вопросы для опросов.',
+        icon: Search 
+    },
+    { 
+        day: 3, 
+        title: 'Функционал', 
+        description: 'Определить минимальный набор функций и приоритизировать задачи.', 
+        aiHelp: 'ИИ помогает приоритизировать функции на основе анализа данных о запросах пользователей.',
+        icon: CheckCircle2 
+    },
+    { 
+        day: 4, 
+        title: 'Прототип', 
+        description: 'Создать кликабельный прототип и подготовить сценарии.', 
+        aiHelp: 'ИИ генерирует текстовое наполнение и даже базовые макеты интерфейса.',
+        icon: Pencil 
+    },
+    { 
+        day: 5, 
+        title: 'Разработка MVP', 
+        description: 'Реализовать ключевые функции (no-code/low-code) и настроить аналитику.', 
+        aiHelp: 'ИИ-ассистенты помогают генерировать код и находить ошибки, ускоряя разработку.',
+        icon: Code 
+    },
+    { 
+        day: 6, 
+        title: 'Тестирование', 
+        description: 'Запустить MVP для 10–50 пользователей и собрать обратную связь.', 
+        aiHelp: 'ИИ анализирует и суммирует обратную связь, выделяя ключевые проблемы и предложения.',
+        icon: TestTube2 
+    },
+    { 
+        day: 7, 
+        title: 'Анализ', 
+        description: 'Сравнить результаты с гипотезой и принять решение о дальнейших шагах.', 
+        aiHelp: 'ИИ помогает визуализировать данные и предлагает рекомендации по улучшению продукта.',
+        icon: BarChart 
+    },
 ];
 
 
@@ -120,7 +162,7 @@ export const OurSolutions = () => {
                            </div>
                            <div>
                             <h4 className="font-semibold">{step.title}</h4>
-                            <p className="text-muted-foreground text-sm">{step.description} <span className="font-medium text-primary">ИИ помогает</span> анализировать тренды, соцсети, генерировать код и рекомендации.</p>
+                            <p className="text-muted-foreground text-sm">{step.description} <span className="font-medium text-primary">ИИ помогает:</span> {step.aiHelp}</p>
                            </div>
                         </div>
                     ))}
